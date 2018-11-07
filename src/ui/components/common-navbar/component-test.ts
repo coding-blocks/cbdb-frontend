@@ -12,7 +12,7 @@ module('Integration | Component | common-navbar', function(hooks) {
 
     await render(hbs`{{common-navbar}}`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.equal(this.element.textContent!.trim(), '');
 
     // Template block usage:
     await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | common-navbar', function(hooks) {
       {{/common-navbar}}
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.equal(this.element.textContent!.trim(), 'template block text');
   });
 });
