@@ -46,7 +46,7 @@
     "ember-cli-sri": "^2.1.1",
     "ember-cli-template-lint": "^1.0.0-beta.1",
     "ember-cli-typescript": "^1.5.0",
-    "ember-cli-typescript-blueprints": "^1.2.0",
+    "ember-cli-typescript-blueprints": "git+https://github.com/typed-ember/ember-cli-typescript-blueprints.git",
     "ember-cli-uglify": "^2.1.0",
     "ember-data": "~3.5.0",
     "ember-decorators": "^3.0.1",
