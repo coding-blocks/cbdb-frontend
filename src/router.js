@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('courses', function() {
     this.route('course', { path: '/:id' });
   });
+  this.route('centers');
 });
 
 export default Router;
