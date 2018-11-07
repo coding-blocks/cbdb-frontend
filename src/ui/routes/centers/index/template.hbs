@@ -1,0 +1,13 @@
+<div>
+  <h2>All Centers</h2>
+  <ul>
+    {{#each model.centers as |center|}}
+      <li>
+        {{#link-to "centers.center" center.id}}
+          {{center.name}}
+        {{/link-to}}
+      </li>
+    {{/each}}
+  </ul>
+  {{outlet}}
+</div>
