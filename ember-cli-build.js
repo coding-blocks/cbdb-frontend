@@ -10,8 +10,8 @@ module.exports = function(defaults) {
       'importBootstrapCSS': false
     }
   });
-
-  app.import('vendor/bootstrap.css')
+  app.import('vendor/google-fonts.css');
+  app.import('vendor/bootstrap.css');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
