@@ -1,0 +1,13 @@
+<div>
+  <h2>All Batches</h2>
+  <ul>
+    {{#each model.batches as |batch|}}
+      <li>
+        {{#link-to "batches.batch" batch.id}}
+          {{batch.name}}
+        {{/link-to}}
+      </li>
+    {{/each}}
+  </ul>
+  {{outlet}}
+</div>
