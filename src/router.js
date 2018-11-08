@@ -16,6 +16,9 @@ Router.map(function() {
   this.route('batches', function() {
     this.route('batch', { path: '/:id' });
   });
+  this.route('teachers', function() {
+    this.route('teacher', { path: '/:id' });
+  });
 });
 
 export default Router;

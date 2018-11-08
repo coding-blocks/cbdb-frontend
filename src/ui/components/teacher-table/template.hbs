@@ -1,0 +1,15 @@
+<table class="table">
+
+  <thead>
+    <th scope="col">ID</th>
+    <th scope="col">Name</th>
+  </thead>
+
+  <tbody>
+    {{#each teachers as |teacher|}}
+      <Row @teacher={{teacher}}></Row>
+    {{/each}}
+  </tbody>
+
+</table>
+{{yield}}
