@@ -4,7 +4,7 @@
     {{#each model.batches as |batch|}}
       <li>
         {{#link-to "batches.batch" batch.id}}
-          {{batch.name}}
+          {{batch.id}}
         {{/link-to}}
       </li>
     {{/each}}
