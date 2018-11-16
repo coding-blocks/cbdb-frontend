@@ -1,4 +1,30 @@
 <div>
-  <h2>Course {{model.id}}</h2>
+  <h2>{{model.course.id}}</h2>
+  <table class="table">
+    <tbody>
+      <tr>
+        <th scope="row">Name</th>
+        <td>{{model.course.name}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Course ID</th>
+        <td>{{model.course.id}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Description</th>
+        <td>{{model.course.description}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Offline</th>
+        <td>{{model.course.hasOffline}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Online</th>
+        <td>{{model.course.hasOnline}}</td>
+      </tr>
+    </tbody>
+
+  </table>
+
   {{outlet}}
 </div>

@@ -3,7 +3,9 @@ import Route from '@ember/routing/route';
 export default class BatchesRoute extends Route {
   model() {
     return ({
-      batches: this.store.findAll('batch')
+      batches: this.store.findAll('batch', {
+        include: 'teachers,center,course'
+      })
     })
   }
 }
